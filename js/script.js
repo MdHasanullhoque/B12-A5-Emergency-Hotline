@@ -199,17 +199,24 @@ cards.forEach(card => {
         //  writing this section in the coins condition because of coins is 1000 to 0
 
         coins -= 20;
-        coinBox.innerText = coins; 
+        coinBox.innerText = coins;
 
         //adding to history
         const currentTime = new Date().toLocaleTimeString(); //time setup
 
         const historyCard = document.createElement("div"); //new div create
 
+
+
         historyCard.className = "shadow-md bg-white rounded-lg p-2 mb-3"; //div style for history box
 
-        historyCard.innerHTML = `${serviceName.innerText}    ${currentTime} <br>  ${serviceNumber.innerText}`;
+        //-----
+        
+        //--
+
+        historyCard.innerHTML = `${serviceName.innerText}  ${currentTime} <br>  ${serviceNumber.innerText}`;
         historyBox.appendChild(historyCard); //adding the new div to history box
+
     });
 
     //copy button from web as per instruction 
