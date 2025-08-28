@@ -72,3 +72,34 @@ heartIconButton.addEventListener("click",function(){
     heart+=1
     heartTap.innerText=heart;
 })
+
+
+
+
+//copy
+
+
+ 
+const copyBtn =document.getElementById("copy-btn");
+const copyCount=document.getElementById("count-3")
+let copyCountStart=0;
+
+copyBtn.addEventListener("click",function(){
+    const serviceNumber = document.getElementById("999-police").innerText
+
+
+       // Copy text to clipboard
+    navigator.clipboard.writeText(serviceNumber)
+        .then(() => {
+
+            //count copy
+
+            copyCountStart +=1;
+            copyCount.innerText=copyCountStart;
+            alert(`নম্বর কপি হয়েছে: ${serviceNumber}`);
+        })
+
+        .catch(err => {
+            console.error('নম্বর কপি হয়নি: ', err);
+        });
+})
