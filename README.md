@@ -28,4 +28,8 @@ answer: attaching one single event to one  parent function,  one click and get r
 
 5:What is the difference between preventDefault() and stopPropagation() methods?
 
+<<<<<<< HEAD
 answer: prevent stops browser default action, and propagation stops bubbling.
+=======
+answer: prevent stops browser default action, and propagation stops bubbling.
+>>>>>>> ce3cf93 (complete deign)
